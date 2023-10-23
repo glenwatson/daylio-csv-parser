@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.9
 """
 Clean CSV application file.
 
@@ -43,7 +43,7 @@ def to_dt(date: str, time: str) -> datetime.datetime:
     """
     dt_str = f"{date} {time}"
 
-    is_12h = time.endswith("am") or time.endswith("pm")
+    is_12h = time.endswith("AM") or time.endswith("PM")
     dt_format = DT_12H if is_12h else DT_24H
 
     return datetime.datetime.strptime(dt_str, dt_format)

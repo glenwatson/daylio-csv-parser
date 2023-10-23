@@ -5,7 +5,7 @@
 
 ### Python
 
-Python 3.6 or above.
+Python 3.9 or above.
 
 **Debian/Ubuntu**
 
